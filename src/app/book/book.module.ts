@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BookListComponent } from './pages/book-list/book-list.component';
 import { BookItemComponent } from './components/book-item/book-item.component';
 import { BookService } from './services/book.service';
+import { CommandBarComponent } from '../shared/components/command-bar/command-bar.component';
 
 
 @NgModule({
@@ -11,11 +12,8 @@ import { BookService } from './services/book.service';
     BookItemComponent
   ],
   imports: [
-    CommonModule
-  ],
-  exports: [
-    BookListComponent,
-    BookItemComponent
+    CommonModule,
+    CommandBarComponent
   ],
   providers:[BookService]
 })

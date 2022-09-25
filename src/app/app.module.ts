@@ -7,9 +7,9 @@ import { BookModule } from './book/book.module';
 import { BlogModule } from './blog/blog.module';
 import { CommandBarComponent } from './shared/components/command-bar/command-bar.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatButtonModule } from '@angular/material/button'
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -24,10 +24,11 @@ import { MatButtonModule } from '@angular/material/button'
     AppRoutingModule,
     BookModule,
     BlogModule,
-    BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
   ],
+
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]

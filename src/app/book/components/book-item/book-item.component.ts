@@ -9,15 +9,13 @@ import { BookService } from '../../services/book.service';
 })
 export class BookItemComponent implements OnInit {
 
-  //public books:BookInterface[] = []
-
   @Input() book:BookInterface | undefined;
   @Output() bookEmitter = new EventEmitter();
 
   constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
-    //this.books = this.bookService.getBooks();
+
   }
 
   editBook(){
